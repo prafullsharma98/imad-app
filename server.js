@@ -12,10 +12,11 @@ app.get('/article-one',function(req,res){
    res.send('article ine is requested'); 
     
 });
-app.get('/article-two',function(req,res){
-   res.send('article two'); 
-    
+app.get('/ui/Article-one.html',function(req,res)
+{
+    res.send(path.join(__dirname,'ui','Article-one.html'));
 });
+    
 app.get('/article-three',function(req,res){
     
     res.send('article three is rsponding');
