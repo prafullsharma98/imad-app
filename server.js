@@ -9,19 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'Article-one.html'));
-   
+   app.get('this is myfirst article and i nailed it'); 
 });
-app.get('/article-two',function(req,res){
-    
-  res.sendFile(path.join(__dirname, 'ui', 'Article-two.html'));
-});
-
-    
-app.get('/article-three',function(req,res){
-    
-    res.sendFile(path.join(__dirname, 'ui', 'Article-three.html'));
-})
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
