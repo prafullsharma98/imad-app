@@ -29,7 +29,7 @@ function createemplate(data)
 
 var htmlTemplate = 
 
-`<html>
+`"html>
     <head>
         <title>
             ${title}
@@ -53,8 +53,8 @@ var htmlTemplate =
             </div>
         </div>
     </body>
-</html> `;
-    
+</html> ";
+    return htmlTemplate;
 }  
 
 app.get('/', function (req, res) {
