@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne={
+var articles ={
+              articleOne:{
     title :'This is mypage',
     heading :'Article One',
     date : '19 sept 2017',
@@ -18,6 +19,18 @@ var articleOne={
      is wonderfull Day Its a shining day</p>
       <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day</p>
     `
+},
+              articleTwo:{
+                       title :'This is mypage',
+                       heading : 'Article Two',
+                       date : '19 sept 2017',
+                       contant : `    
+                       <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day</p>
+                        <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its
+                            a shining day oday is wonderfull Day Its a shining day</p>`
+              },
+              articleThree:{}
+              
 };
 
 function createemplate(data)
@@ -26,6 +39,7 @@ function createemplate(data)
     var heading = data.heading;
     var date = data.date;
     var content = data.content;
+    
 
 var htmlTemplate = 
 
@@ -68,7 +82,7 @@ app.get('/prafull-1',function(req,res){
    res.send(createemplate(articleOne));
 });
 app.get('/prafull-2',function(req,res){
-     res.sendFile(path.join(__dirname,'ui','article-two.html'));
+    res.send(createTemplate(articletwo));
 });
 app.get('/prafull-3',function(req,res){
     res.sendFile(path.join(__dirname,'ui','article-three.html')); 
