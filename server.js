@@ -28,8 +28,16 @@ var articles ={
                        <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day</p>
                         <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its
                             a shining day oday is wonderfull Day Its a shining day</p>`
+              },
+              articleThree:{
+                  title :'Third page',
+                  heading :'Article Three' ,
+                  date : '19 sept 2017',
+                  content :`
+                  <p>
+                        this is for additional use
+                  </p>`
               }
-             
               
 };
 
