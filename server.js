@@ -5,10 +5,10 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleone={
+var articleOne={
     title :'This is mypage',
     heading :'Article One',
-    data : '19 sept 2017',
+    date : '19 sept 2017',
     content:`
     <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining         
     day oday is wonderfull Day Its a shining day</p>
@@ -20,9 +20,20 @@ var articleone={
     `
 };
 
-var htmlTemplate = {<html>
+function createemplate(data)
+{
+    var title = data.title;
+    var heading = data.heading;
+    var date = data.date;
+    var content = data.content;
+
+var htmlTemplate = 
+
+`<html>
     <head>
-        <title>${title}</title>
+        <title>
+            ${title}
+        </title>
         <meta name="viewport" content="width-device-width,init-scale=1" />
         <link href="/ui/style.css" rel="stylesheet" />
   
@@ -42,10 +53,10 @@ var htmlTemplate = {<html>
             </div>
         </div>
     </body>
-</html>
+</html> `;
 
-    
-};
+}  
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -54,7 +65,7 @@ app.get('/ui/style.css',function(req,res){
     res.sendFile(path.join(__dirname,'ui','style.css'));
 });
 app.get('/prafull-1',function(req,res){
-    res.sendFile(path.join(__dirname,'ui','article-one.html'));
+   res.send(createemplate(articleOne));
 });
 app.get('/prafull-2',function(req,res){
      res.sendFile(path.join(__dirname,'ui','article-two.html'));
