@@ -19,7 +19,7 @@ app.get('/prafull-2',function(req,res){
      res.sendFile(path.join(__dirname,'ui','article-two.html'));
 });
 app.get('/prafull-3',function(req,res){
-   res.send('this is my third- url'); 
+    res.sendFile(path.join(__dirname,'ui','article-three.html')); 
 });
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
