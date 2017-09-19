@@ -15,7 +15,7 @@ app.get('/ui/style.css',function(req,res){
 app.get('/prafull-1',function(req,res){
     res.sendFile(path.join(__dirname,'ui','article-one.html'));
 });
-app.get('/prafull-2',function(res,req){
+app.get('/prafull-2',function(req,res){
      res.sendFile(path.join(__dirname,'ui','article-two.html'));
 });
 app.get('/prafull-3',function(req,res){
