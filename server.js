@@ -28,8 +28,8 @@ var articles ={
                        <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day</p>
                         <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its
                             a shining day oday is wonderfull Day Its a shining day</p>`
-              },
-              articleThree:{}
+              }
+             
               
 };
 
@@ -79,10 +79,10 @@ app.get('/ui/style.css',function(req,res){
     res.sendFile(path.join(__dirname,'ui','style.css'));
 });
 app.get('/prafull-1',function(req,res){
-   res.send(createemplate(articleOne));
+   res.send(createemplate(articles.articleOne));
 });
 app.get('/prafull-2',function(req,res){
-    res.send(createemplate(articletwo));
+    res.send(createemplate(articles.articletwo));
 });
 app.get('/prafull-3',function(req,res){
     res.sendFile(path.join(__dirname,'ui','article-three.html')); 
