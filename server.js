@@ -24,7 +24,7 @@ var articles ={
                        title :'This is mypage',
                        heading : 'Article Two',
                        date : '19 sept 2017',
-                       contant : `    
+                       content : `    
                        <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day</p>
                         <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its
                             a shining day oday is wonderfull Day Its a shining day</p>`
