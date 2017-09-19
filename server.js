@@ -5,6 +5,47 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleone={
+    title :'This is mypage',
+    heading :'Article One',
+    data : '19 sept 2017',
+    content:`
+    <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining         
+    day oday is wonderfull Day Its a shining day</p>
+     <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday
+     is wonderfull Day Its a shining day</p>
+     <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday
+     is wonderfull Day Its a shining day</p>
+      <p> Today is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day oday is wonderfull Day Its a shining day</p>
+    `
+};
+
+var htmlTemplate = {<html>
+    <head>
+        <title>${title}</title>
+        <meta name="viewport" content="width-device-width,init-scale=1" />
+        <link href="/ui/style.css" rel="stylesheet" />
+  
+    </head>
+    <body>
+        <div class ="txt1">
+            <div>
+                <a href="http://www.google.com">home</a>
+            </div>
+            <hr/>
+            <h3>${heading}</h3>
+            <div>
+               ${data}
+            </div>
+            <div>
+                ${contant}
+            </div>
+        </div>
+    </body>
+</html>
+
+    
+};
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
