@@ -16,7 +16,7 @@ app.get('/prafull-1',function(req,res){
     res.sendFile(path.join(__dirname,'ui','article-one.html'));
 });
 app.get('/prafull-2',function(res,req){
-  req.sendFile(path.join(__dirname,'ui','article-two.html'));
+  res.sendFile(path.join(__dirname,'ui','article-two.html'));
 });
 app.get('/prafull-3',function(req,res){
    res.send('this is my third- url'); 
