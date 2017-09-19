@@ -8,14 +8,12 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/ui/article-one.html',function(req,res){
-   res.sendFile(path.join(__dirname,'ui','article-one.html')); 
-});
+
 app.get('/ui/style.css',function(req,res){
     res.sendFile(path.join(__dirname,'ui','style.css'));
 });
 app.get('/prafull-1',function(req,res){
-    res.send('this is My first URL');
+    res.sendFile(path.join(__dirname,'ui','article-one.html'));
 });
 app.get('/prafull-2',function(res,req){
    req.send('this is my url 2'); 
