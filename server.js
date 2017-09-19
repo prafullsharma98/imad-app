@@ -14,7 +14,15 @@ app.get('/article-one',function(req,res){
 app.get('/ui/style.css',function(req,res){
     res.sendFile(path.join(__dirname,'ui','style.css'));
 });
-
+app.get('/prafull-1',function(req,res){
+    res.sendFile('this is My first URL');
+}):
+app.get('/prafull-2',function(res,req){
+   req.send('this is my url 2'); 
+});
+app.get('/prafull-3',function(req,res){
+   res.send('this is my third- url'); 
+});
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
