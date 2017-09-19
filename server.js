@@ -82,7 +82,7 @@ app.get('/prafull-1',function(req,res){
    res.send(createemplate(articles.articleOne));
 });
 app.get('/prafull-2',function(req,res){
-    res.send(createemplate(articles.articletwo));
+    res.send(createemplate(articles.articleTwo));
 });
 app.get('/prafull-3',function(req,res){
     res.sendFile(path.join(__dirname,'ui','article-three.html')); 
