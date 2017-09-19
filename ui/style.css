@@ -19,4 +19,13 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.txt1
+{
+    max-width: 800px;
+    margin: 0 auto;
+    color: #aab511;
+    font-family: italic;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
