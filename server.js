@@ -93,7 +93,7 @@ app.get('/prafull-2',function(req,res){
     res.send(createemplate(articles.articleTwo));
 });
 app.get('/prafull-3',function(req,res){
-    res.sendFile(path.join(__dirname,'ui','article-three.html')); 
+    res.send(createemplate(articles.articleThree));
 });
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
