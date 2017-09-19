@@ -49,7 +49,7 @@ var htmlTemplate =
                ${data}
             </div>
             <div>
-                ${contant}
+                ${content}
             </div>
         </div>
     </body>
