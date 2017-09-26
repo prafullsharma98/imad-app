@@ -1,8 +1,10 @@
-var a = document.getElementById("counter");
+var a = document.getElementById('txt1');
 var counter = 0;
-a.onclick = function()
-{
-       counter = counter+1;
-       var s = document.getElementById("count");
-       s.innerHTML = counter.toString();
-}
+onclick.a = function(){
+    
+    counter = counter+1;
+    var b = document.getElementById('count');
+    b.innerHTML = counter.toString();
+    
+};
+
