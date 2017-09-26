@@ -1,4 +1,4 @@
-var a = document.getElementById('txt1');
+var a = document.getElementById('txt2');
 var counter = 0;
 onclick.a = function(){
     
