@@ -1,6 +1,6 @@
 var a = document.getElementById('txt2');
 var counter = 0;
-onclick.a= function(){
+a.onclick= function(){
     
     counter = counter+1;
     var b = document.getElementById('count');
