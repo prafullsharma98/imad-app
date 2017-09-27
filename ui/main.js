@@ -4,9 +4,9 @@ a.onclick= function(){
     
    var x = new XMLHttpRequest();
    x.onreadystatechange = function(){
-     if(request.readyState == XMLHttpRequest.Done)
+     if(request.readyState === XMLHttpRequest.DONE)
      {
-         if(request.status == 304)
+         if(request.status === 304)
          {
              var counter = request.responseText;
              var x = document.get.elementById('count');
