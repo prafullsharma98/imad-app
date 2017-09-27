@@ -9,8 +9,8 @@ a.onclick= function(){
          if(x.status === 304)
          {
              var txt2 = x.responseText;
-             var y = document.get.elementById('count');
-             y.innerHTML = counter.toString();
+             var span = document.get.elementById('count');
+             span.innerHTML = txt2.toString();
          }
      }
     
