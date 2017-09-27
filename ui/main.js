@@ -6,7 +6,7 @@ a.onclick= function(){
    x.onreadystatechange = function(){
      if(request.readyState == XMLHttpRequest.Done)
      {
-         if(request.status == 200)
+         if(request.status == 304)
          {
              var counter = request.responseText;
              var x = document.get.elementById('count');
