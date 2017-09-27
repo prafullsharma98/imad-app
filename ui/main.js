@@ -4,7 +4,7 @@ a.onclick= function(){
     
    var x = new XMLHttpRequest();
    x.onreadystatechange = function(){
-     if(request.readyState === XMLHttpRequest.DONE)
+     if(x.onreadyState === XMLHttpRequest.DONE)
      {
          if(request.status === 304)
          {
