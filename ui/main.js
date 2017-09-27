@@ -8,7 +8,7 @@ a.onclick= function(){
      {
          if(x.status === 304)
          {
-             var counter = request.responseText;
+             var counter = x.responseText;
              var y = document.get.elementById('count');
              y.innerHTML = counter.toString();
          }
