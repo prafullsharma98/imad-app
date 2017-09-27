@@ -17,6 +17,6 @@ a.onclick= function(){
     
    };
      x.open('GET','http://prafullsharma48.imad.hasura-app.io/counter',true);
-     x.send(null);
+     x.send();
 };
 
