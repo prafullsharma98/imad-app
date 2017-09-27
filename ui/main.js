@@ -1,5 +1,5 @@
 var a = document.getElementById('txt2');
-var counter = 0;
+
 a.onclick= function(){
     
    var x = new XMLHttpRequest();
