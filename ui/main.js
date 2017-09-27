@@ -4,13 +4,13 @@ a.onclick= function(){
     
    var x = new XMLHttpRequest();
    x.onreadystatechange = function(){
-     if(x.onreadyState === XMLHttpRequest.DONE)
+     if(x.readyState === XMLHttpRequest.DONE)
      {
          if(request.status === 304)
          {
              var counter = request.responseText;
-             var x = document.get.elementById('count');
-             x.innerHTML = counter.toString();
+             var y = document.get.elementById('count');
+             y.innerHTML = counter.toString();
          }
      }
     
